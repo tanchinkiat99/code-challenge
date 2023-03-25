@@ -1,32 +1,35 @@
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fancy Form</title>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fancy Form</title>
+    <!-- You may add more stuff here -->
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- You may add more stuff here -->
-  <link href="style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
-</head>
-
-<body>
-  <h1>
-    Welcome to the Switcheo Transaction Form!
-  </h1>
-  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form>
-    <label for="input-address">ETH Address</label>
-    <input id="input-address" />
-    <br>
-    <label for="input-amount">Amount to send</label>
-    <input type="float" id="input-amount" />
-    <br>
-    <label for="input-otp">OTP Authentication</label>
-    <input id="input-otp" />
-
-    <button type="button" onclick="toDonePage()">SEND TOKENS</button>
-  </form>
-  <script src="script.js"></script>
-</body>
-
+  <body>
+    <h1>Switcheo Transaction Form</h1>
+    <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+    <form>
+      <label for="input-address">ETH Address</label>
+      <input id="input-address" placeholder="Enter ETH Address here" />
+      <br />
+      <label for="input-amount">Amount to send</label>
+      <input
+        type="float"
+        id="input-amount"
+        placeholder="Enter Transaction Amount here"
+      />
+      <br />
+      <label for="input-otp">OTP Authentication</label>
+      <input id="input-otp" placeholder="Enter OTP here" />
+      <br />
+      <button type="button" onclick="submitTransaction()">SEND TOKENS</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
 </html>

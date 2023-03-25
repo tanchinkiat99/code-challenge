@@ -1,11 +1,105 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
+body,
+h1 {
+  font-family: "Raleway", sans-serif;
+  margin-left: 1.1%;
+}
+h1 {
+  margin-left: 1.1%;
+  font-size: 300%;
+  font-weight: 300;
+  color: #111;
+}
+form {
+  width: 40%;
+}
+html {
+  background-image: url("coins.jpg");
+  background-size: 105%;
+}
+body {
+  /* height: 100%; */
   line-height: 1.8;
+  background-image: url("coins.jpg");
+  background-size: 100%;
+}
+div {
+  margin-top: -30px;
+}
+input {
+  float: right;
+  width: 50%;
+  margin-top: 2%;
+}
+label {
+  font-size: 150%;
+  color: #303030;
+  margin-left: 3%;
+  margin-right: 0px;
 }
 
-label {
-  font-size: large;
-  color: blue;
+button {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: black;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: "Raleway", sans-serif;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #0000ff,
+    #4f4fce,
+    #5be4f3,
+    #00ffd5,
+    #002bff,
+    #7a00ff
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d7d7d7;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
