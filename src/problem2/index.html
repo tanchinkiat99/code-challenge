@@ -6,22 +6,25 @@
 
   <!-- You may add more stuff here -->
   <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
 </head>
 
 <body>
-
+  <h1>
+    Welcome to the Switcheo Transaction Form!
+  </h1>
   <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form onsubmit="return !1">
+  <form>
     <label for="input-address">ETH Address</label>
     <input id="input-address" />
-
+    <br>
     <label for="input-amount">Amount to send</label>
-    <input id="input-amount" />
-
+    <input type="float" id="input-amount" />
+    <br>
     <label for="input-otp">OTP Authentication</label>
-    <input type="number" id="input-otp" />
+    <input id="input-otp" />
 
-    <button>SEND TOKENS</button>
+    <button type="button" onclick="toDonePage()">SEND TOKENS</button>
   </form>
   <script src="script.js"></script>
 </body>

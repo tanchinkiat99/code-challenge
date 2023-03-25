@@ -1,8 +1,11 @@
-body {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  min-width: 360px;
-  font-family: Arial, Helvetica, sans-serif;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+label {
+  font-size: large;
+  color: blue;
 }
