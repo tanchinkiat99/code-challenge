@@ -1,0 +1,13 @@
+[  {    "inputs": [      {        "internalType": "address",        "name": "_wallet",        "type": "address"      },      {        "internalType": "address[]",        "name": "_tokens",        "type": "address[]"      }    ],
+    "name": "getBalances",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

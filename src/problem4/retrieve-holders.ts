@@ -1,8 +1,8 @@
 import Web3 from "web3";
 
-const rpcUrl = "https://bsc-dataseed.binance.org/"; // Binance Smart Chain RPC endpoint
+const rpcUrl = "https://bsc-dataseed.binance.org/"; // binance smart chain RPC endpoint
 const contractAddress = "0x250b211EE44459dAd5Cd3bCa803dD6a7EcB5d46C"; // SWTH token contract address
-const limit = 100; // number of top holders to retrieve
+const limit = 100; 
 
 const web3 = new Web3(rpcUrl);
 
